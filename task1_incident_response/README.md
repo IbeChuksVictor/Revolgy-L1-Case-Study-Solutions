@@ -31,13 +31,21 @@
         ```sh
         ssh -i key.pem ec2-user@<instance-public-ip>
         ```
-      - To Check CPU usage, run:
+      - To identify the processes with the most CPU usage, run:
         ```sh
-        top -o %CPU
+        # outputs real-time data of CPU usage
+        top -o %CPU 
+
+        # Outputs snapshots of the top 10 processes consuming the most CPU
+        ps aux --sort=-%cpu | head -10
         ```
-      - To Identify the top-consuming process, run:
+      - To identify the processes with the most memory usage, run:
         ```sh
-        ps aux --sort=-%cpu | head -5
+        # outputs real-time data of Memory usage
+        top -o %MEM
+
+        # Outputs snapshots of the top 10 processes consuming the most memory
+        ps aux --sort=-%mem | head -10
         ```
   3. Check System Logs for Errors or Unusual patterns:<br>
       - For system logs run:  - 
