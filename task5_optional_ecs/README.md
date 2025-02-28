@@ -4,7 +4,7 @@
 
 ### Symptoms
 - Tasks show as `PENDING` in the ECS console
-- No tasks reach RUNNING state
+- No tasks reach `RUNNING` state
 - Service events might show "service unable to place task"
 
 ### Potential Causes
@@ -39,7 +39,7 @@
 
 4. **Check IAM Role Permissions**:
    - Verify the task execution role has proper policies
-   - Ensure the role can be assumed by the ECS service
+   - Ensure the ECS service can assume the role
    ```bash
    aws iam get-role --role-name L1_CS_ECS_task_execution_role
    aws iam list-attached-role-policies --role-name L1_CS_ECS_task_execution_role
@@ -84,7 +84,7 @@
    Verify the health check path matches the application's health endpoint
 
 3. **Examine Security Group Rules**:
-   - Ensure ALB security group can reach ECS tasks on the health check port
+   - Ensure the ALB security group can reach ECS tasks on the health check port
    - Check that ECS tasks allow inbound from the ALB
    ```bash
    aws ec2 describe-security-group-rules --filters "Name=group-id,Values=<security-group-id>"
@@ -102,7 +102,7 @@
 
 ### Resolution Steps
 - Adjust health check settings (path, timeout, thresholds)
-- Fix application to respond properly to health checks
+- Fix the application to respond properly to health checks
 - Update security group rules to allow health check traffic
 - Check container configuration (correct port exposures)
 - Debug application issues via logs
