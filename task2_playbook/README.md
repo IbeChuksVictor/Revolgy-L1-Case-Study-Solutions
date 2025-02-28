@@ -1,9 +1,7 @@
 # Troubleshooting Playbook: High CPU Usage on AWS EC2 Instance
 
 This playbook provides step-by-step instructions for identifying, troubleshooting, and resolving high CPU usage on an AWS EC2 instance. It also includes guidelines for escalation and long-term mitigation.
-
----
-
+------
 ## 1. Verify the Alert
 Before taking any action, confirm that the high CPU usage alert is valid.
 
@@ -15,9 +13,7 @@ Before taking any action, confirm that the high CPU usage alert is valid.
    - Select the **EC2** namespace and find the affected instance.
    - Review the **CPUUtilization** metric to confirm high CPU usage (e.g., consistently above 80-90%).
 4. Verify if the high CPU usage is expected (e.g., during peak traffic or scheduled tasks).
-
----
-
+------
 ## 2. Collect Logs and Diagnostic Information
 Gather relevant logs and metrics to diagnose the root cause.
 
@@ -42,9 +38,7 @@ Gather relevant logs and metrics to diagnose the root cause.
    - If configured, retrieve application logs from CloudWatch Logs.
 7. **Check Application Logs**:
    - Review application-specific logs (e.g., `/var/log/nginx/error.log` for Nginx).
-
----
-
+------
 ## 3. Take Short-Term Actions
 Mitigate the immediate impact of high CPU usage.
 
@@ -62,9 +56,7 @@ Mitigate the immediate impact of high CPU usage.
    - If the instance is part of an Auto Scaling Group, consider adding more instances to distribute the load.
 3. **Adjust CPU Credits (for T-series Instances)**:
    - For instances that are burstable (e.g., t2, t3), monitor CPU credits and consider switching to unlimited mode if applicable.
-
----
-
+------
 ## 4. Implement Long-Term Actions
 Address the root cause to prevent recurrence.
 
@@ -82,9 +74,7 @@ Address the root cause to prevent recurrence.
    - Create CloudWatch Alarms to notify you of high CPU usage before it becomes critical.
 6. **Monitor and Analyze Trends**:
    - Use CloudWatch dashboards to monitor CPU usage trends and identify patterns.
-
----
-
+------
 ## 5. Escalation
 If the issue cannot be resolved or requires additional expertise, escalate to the appropriate team.
 
@@ -99,9 +89,7 @@ If the issue cannot be resolved or requires additional expertise, escalate to th
 1. Notify the the relevant team - **DevOps/SRE Team**, **Cloud Infrastructure Team** or **Application Team**, using the internal communication tools.
 2. Provide all collected logs, metrics, and steps taken so far using the internal incident reporting template.
 3. If necessary, involve AWS Support by opening a support case with detailed information.
-
----
-
+------
 ## 6. Documentation and Knowledge Sharing
 After resolving the issue, document the findings and update the knowledge base.
 
@@ -109,5 +97,4 @@ After resolving the issue, document the findings and update the knowledge base.
 1. Record the root cause and resolution steps.
 2. Update the playbook with any new insights or best practices.
 3. Share the findings with the team during the next incident review meeting.
-
----
+------

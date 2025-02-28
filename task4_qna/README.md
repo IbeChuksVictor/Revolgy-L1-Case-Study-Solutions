@@ -26,7 +26,7 @@
 		top -o %CPU 
 		# To get the most CPU and memory usage process in descending order in real-time
 		```
----
+------
 2. **Managing Services**
 	- To check if the service is running e.g. `nginx`, run:
 		```sh
@@ -36,11 +36,11 @@
 		```sh
 		sudo systemctl restart nginx
 		```
----
+------
 3. **Log Analysis & Troubleshooting**
 	- System logs and application logs can typically be found in the `/var/log` directory.
 	- The `tail` command with the `-f` option will continuously watch for new log entries.
----
+------
 4. **User & Permissions Management**
 	- To add a new Linux user you run these commands:
 		```sh
@@ -58,7 +58,7 @@
 		# Add user to wheel group (Amazon Linux is of the CentOS/RHEL distribution)
 		sudo usermod -aG wheel support_agent
 		```
----
+------
 # Networking & Cloud Infrastructure Basics
 5. **Network Troubleshooting – Connectivity Issue**
 	- Command to check if the server is reachable from another machine:
@@ -76,7 +76,7 @@
 		- DNS resolution problems if using domain name
 		- Elastic IP not properly associated with the instance
 		- Network interface issues on the instance
----
+------
 6. **Security Groups & Firewalls**
 	- To check security group rules:
 		```sh
@@ -90,7 +90,7 @@
     		--port 80 \
     		--cidr 0.0.0.0/0
 		```
----
+------
 7. **DNS Resolution Issues**
 	- To check if a domain name is resolving to correct IP address:
 		```sh
@@ -129,7 +129,7 @@
 		# Check if DNS port is accessible
 		nc -zv DNS_SERVER 53
 		```
----
+------
 8. **Infrastructure as Code (IaC) – Terraform Basics**
 	- To check current Terraform state run:
 		```sh
@@ -148,7 +148,7 @@
 		terraform plan
 		terraform apply --auto-approve
 		```
----
+------
 # System Maintenance & Best Practices
 9. **Package Management & Software Updates**
 	- To check for available update on a Debian-based system, run:
@@ -164,7 +164,7 @@
 		sudo apt update
 		sudo apt install nginx
 		```
----
+------
 10. **Schedules Tasks** (Cron Jobs)
 	- To list existing scheduled tasks for a user:
 		```sh
@@ -185,4 +185,4 @@
 		# For system-wide cron (alternative)
 		echo "0 0 * * * root /usr/bin/systemctl restart nginx" | sudo tee -a /etc/crontab
 		```
----
+------

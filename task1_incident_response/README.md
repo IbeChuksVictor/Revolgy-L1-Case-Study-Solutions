@@ -11,14 +11,14 @@
   - **Instance Type:** t3.micro
   - **Application:** customer-frontend-app
   - **Impact:** Increased latency observed in application response
-
+------
 **Potential Causes:**<br>
   - Increased Traffic Load - Sudden surge in users or traffic spikes may have overwhelmed the instance
   - Application Performance Issues - Inefficcient code, memory leaks, or excessive resource consumption.
   - Background Processes - Unexpected processes consuming the CPU resources.
   - Instance Type Limitation - The `t3.micro` instance has limited compute capacity, which may be insufficient for the current workload.
   - Malicious Activity - A potential security threat (eg DDoS Attack) causing high resource usage.
-
+------
 **Investigation Steps:**<br>
   1. Check to verify AWS CloudWatch Metrics or any third-Party monitoring tool in use:
       - Review CPU utilization trends before and after the alert.
@@ -69,6 +69,7 @@
         ```sh
         netstat -tunapl
         ```
+------
 **Criteria for Escalation:**<br>
 Escalation is necessary if:
   - The issue persists beyond initial troubleshooting.
