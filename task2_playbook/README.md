@@ -1,6 +1,6 @@
 # Troubleshooting Playbook: High CPU Usage on AWS EC2 Instance
 
-This playbook provides step-by-step instructions for identifying, troubleshooting, and resolving high CPU usage on an AWS EC2 instance. It also includes guidelines for escalation and long-term mitigation.
+##### This playbook provides step-by-step instructions for identifying, troubleshooting, and resolving high CPU usage on an AWS EC2 instance. It also includes guidelines for escalation and long-term mitigation.
 ------
 ## 1. Verify the Alert
 Before taking any action, confirm that the high CPU usage alert is valid.
