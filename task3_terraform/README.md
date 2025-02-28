@@ -1,5 +1,5 @@
 # Terraform Script Explanation<br>
- #### This Terraform [script](./main.tf) provisions an AWS EC2 instance with the following specifications:
+ ##### This Terraform [script](./main.tf) provisions an AWS EC2 instance with the following specifications:
 ------
 **Provider Configuration:** 
   - Specifies HashiCorp's AWS provider version 5.88.0
@@ -27,7 +27,7 @@
 **To apply this configuration:**<br>
 Run:
 ```sh
-teraform init
+terraform init
 terraform plan
 terraform apply --auto-approve
 ```
