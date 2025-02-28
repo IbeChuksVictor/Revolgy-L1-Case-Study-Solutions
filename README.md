@@ -17,14 +17,14 @@ Investigated a simulated high CPU usage alert on an AWS EC2 instance and provide
 
 📂 [View Incident Report](https://github.com/IbeChuksVictor/Revolgy-L1-Case-Study-Solutions/tree/main/task1_incident_response)
 
----
+------
 
 ### 2️⃣ Playbook Execution & Documentation
 Developed a structured troubleshooting playbook to handle high CPU usage incidents on AWS EC2 instances. The playbook includes verification steps, log collection, short-term and long-term remediation, and escalation guidelines.
 
 📂 [View Playbook](https://github.com/IbeChuksVictor/Revolgy-L1-Case-Study-Solutions/tree/main/task2_playbook)
 
----
+------
 
 ### 3️⃣ Basic Infrastructure as Code (IaC) - Terraform
 Created a Terraform script to provision an AWS EC2 instance with:
@@ -35,14 +35,14 @@ Created a Terraform script to provision an AWS EC2 instance with:
 
 📂 [View Terraform Script](https://github.com/IbeChuksVictor/Revolgy-L1-Case-Study-Solutions/tree/main/task3_terraform)
 
----
+------
 
 ### ❓ Q&A Section
 Answered technical questions related to Linux administration, networking, security groups, DNS resolution, Terraform, system maintenance, and best practices.
 
 📂 [View Q&A](https://github.com/IbeChuksVictor/Revolgy-L1-Case-Study-Solutions/tree/main/task4_qna)
 
----
+------
 
 ### ⭐ Optional Task: ECS Deployment with Terraform
 Deployed a "Hello World" Nginx container on AWS ECS using Terraform, including:
@@ -54,9 +54,7 @@ Deployed a "Hello World" Nginx container on AWS ECS using Terraform, including:
 
 📂 [View ECS Deployment](https://github.com/IbeChuksVictor/Revolgy-L1-Case-Study-Solutions/tree/main/task5_optional_ecs)
 
-
-
----
+------
 
 ## 📌 Submission Information
 This project is structured for easy navigation. Each folder contains relevant files, documentation, and Terraform scripts as needed.
