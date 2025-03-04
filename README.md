@@ -55,6 +55,3 @@ Deployed a "Hello World" Nginx container on AWS ECS using Terraform, including:
 This project is structured for easy navigation. Each folder contains relevant files, documentation, and Terraform scripts as needed.
 
 For any questions or discussions, feel free to reach out!
-
-🚀 Thank you for reviewing my submission!
-
