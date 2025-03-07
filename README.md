@@ -12,19 +12,19 @@ Welcome to my submission for the Junior Cloud Engineer L1 case study. This repos
 
 ## Overview of Tasks
 
-### 1️ Incident Response & Troubleshooting
+### 1️. Incident Response & Troubleshooting
 Investigated a simulated high CPU usage alert on an AWS EC2 instance and provided an incident report detailing root cause analysis, troubleshooting steps, and escalation criteria.
 
 [View Incident Report](https://github.com/IbeChuksVictor/Revolgy-L1-Case-Study-Solutions/tree/main/task1_incident_response)
 
 ------
-### 2️ Playbook Execution & Documentation
+### 2️. Playbook Execution & Documentation
 Developed a structured troubleshooting playbook to handle high CPU usage incidents on AWS EC2 instances. The playbook includes verification steps, log collection, short-term and long-term remediation, and escalation guidelines.
 
 [View Playbook](https://github.com/IbeChuksVictor/Revolgy-L1-Case-Study-Solutions/tree/main/task2_playbook)
 
 ------
-### 3️ Basic Infrastructure as Code (IaC) - Terraform
+### 3️. Basic Infrastructure as Code (IaC) - Terraform
 Created a Terraform script to provision an AWS EC2 instance with:
 - Instance Type: `t3.micro`
 - OS: Amazon Linux 2
